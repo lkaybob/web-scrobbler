@@ -849,6 +849,13 @@ const connectors = [{
 	js: 'connectors/qq-video.js',
 	id: 'qq-video',
 }, {
+	label: 'Naver Vibe',
+	matches: [
+		'*://vibe.naver.com/*',
+	],
+	js: 'connectors/naver-vibe.js',
+	id: 'naver-vibe',
+}, {
 	label: 'Naver',
 	matches: [
 		'*://playerui.music.naver.com/*',
@@ -1696,13 +1703,6 @@ const connectors = [{
 	matches: ['*://streetvoice.cn/*'],
 	js: 'connectors/streetvoice.js',
 	id: 'streetvoice',
-}, {
-	label: 'Synology',
-	matches: [
-		'*://*5000/*',
-	],
-	js: 'connectors/synology.js',
-	id: 'synology',
 }];
 
 define(() => connectors);
